@@ -76,6 +76,11 @@ BOARD_FORCE_STATIC_A2DP := true
 # gps
 BOARD_USES_GPSWRAPPER := true
 
+# FM Radio
+BOARD_HAVE_FM_RADIO := true
+BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
+BOARD_FM_DEVICE := si4709
+
 # Vibrator
 BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/samsung/c1-common/vibrator/tspdrv.c
 
