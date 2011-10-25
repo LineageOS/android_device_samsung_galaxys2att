@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
+# Service Mode Secret Code
+PRODUCT_PACKAGES += \
+    SamsungServiceMode
+
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/galaxys2att/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
