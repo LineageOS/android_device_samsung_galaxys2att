@@ -66,9 +66,10 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
-# Service Mode Secret Code
+# Device specific apps
 PRODUCT_PACKAGES += \
-    SamsungServiceMode
+    SamsungServiceMode \
+    C1Parts
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
