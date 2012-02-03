@@ -28,8 +28,8 @@ mkdir -p ../../../vendor/$MANUFACTURER/$COMMON/proprietary/hw
 mkdir -p ../../../vendor/$MANUFACTURER/$COMMON/proprietary/keychars
 mkdir -p ../../../vendor/$MANUFACTURER/$COMMON/proprietary/wifi
 
-# galaxys2
-
+# galaxys2att
+adb pull /system/lib/libpn544_fw.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libpn544_fw.so
 
 # c1-common
 adb pull /system/lib/libActionShot.so ../../../vendor/$MANUFACTURER/$COMMON/proprietary/libActionShot.so
@@ -138,9 +138,9 @@ adb pull /system/lib/libyamahasrc.so ../../../vendor/$MANUFACTURER/$COMMON/propr
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \\
 
-# All the blobs necessary for galaxys2 devices
+# All the blobs necessary for galaxys2att device
 PRODUCT_COPY_FILES += \\
-
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libpn544_fw.so:system/lib/libpn544_fw.so
 EOF
 
 
